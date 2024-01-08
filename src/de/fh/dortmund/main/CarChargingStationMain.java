@@ -107,12 +107,12 @@ public class CarChargingStationMain {
 				int zip = scan.nextInt();
 				loc.setZipcode(zip);
 				scan.nextLine();
-				System.out.println("Enter weather (eg. Sunny, Windy, etc.): ");
+				System.out.println("Enter Weather (eg. Sunny, Windy, etc.): ");
 				String weather = scan.nextLine();
 				loc.setWeather(weather);
 				while (true) {
 					EnergySource energy = new EnergySource();
-					System.out.println("Enter Energy source ID (eg. ES001): ");
+					System.out.println("Enter Energy Source ID (eg. ES001): ");
 					String sourceID = scan.nextLine();
 					energy.setId(sourceID);
 					System.out.println("Enter Energy Source Name (eg.Solar, Hydro, Wind): ");
@@ -143,7 +143,7 @@ public class CarChargingStationMain {
 			admin.setLocation(locList);
 			adminList.add(admin);
 			printLogs("Admin " + admin.getAdminName() + " data received", "AdminData.txt");
-			System.out.println("Do you to add more admins?");
+			System.out.println("Do you want to add more admins? (yes/no): ");
 			String canContinue = scan.nextLine();
 			if (canContinue.equalsIgnoreCase("yes")) {
 				continue;
@@ -183,7 +183,7 @@ public class CarChargingStationMain {
 				printLogs(e.getMessage(), "CarChargingStationMain.txt");
 			}
 			printLogs("User " + user.getCar().getOwnerName() + " data received", "UserData.txt");
-			System.out.println("Do you want to add more users");
+			System.out.println("Do you want to add more users? (yes/no): ");
 			String addUsers = scan.nextLine();
 			if (addUsers.equalsIgnoreCase("yes")) {
 				continue;
