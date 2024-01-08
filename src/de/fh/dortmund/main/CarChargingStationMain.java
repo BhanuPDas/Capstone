@@ -87,42 +87,42 @@ public class CarChargingStationMain {
 	public static List<Admin> getAdminData() {
 
 		List<Admin> adminList = new ArrayList<>();
-		System.out.println("Enter Admin data");
+		System.out.println("---- Enter Admin data ----");
 		while (true) {
 			Admin admin = new Admin();
 			List<Location> locList = new ArrayList<>();
 			System.out.println("Enter Admin Name");
 			String adminName = scan.nextLine();
 			admin.setAdminName(adminName);
-			System.out.println("Enter Admin ID");
+			System.out.println("Enter Admin ID (eg.001): ");
 			String adminID = scan.nextLine();
 			admin.setAdminID(adminID);
 			while (true) {
 				Location loc = new Location();
 				List<EnergySource> energyList = new ArrayList<>();
-				System.out.println("Enter Area Name");
+				System.out.println("Enter Area Name (eg.Dortmund): ");
 				String area = scan.nextLine();
 				loc.setAreaName(area);
-				System.out.println("Enter Zipcode");
+				System.out.println("Enter Zipcode: ");
 				int zip = scan.nextInt();
 				loc.setZipcode(zip);
 				scan.nextLine();
-				System.out.println("Enter weather");
+				System.out.println("Enter Weather (eg. Sunny, Windy, etc.): ");
 				String weather = scan.nextLine();
 				loc.setWeather(weather);
 				while (true) {
 					EnergySource energy = new EnergySource();
-					System.out.println("Enter Energy source ID");
+					System.out.println("Enter Energy Source ID (eg. ES001): ");
 					String sourceID = scan.nextLine();
 					energy.setId(sourceID);
-					System.out.println("Enter Source Name");
+					System.out.println("Enter Energy Source Name (eg.Solar, Hydro, Wind): ");
 					String sourceName = scan.nextLine();
 					energy.setSourceName(sourceName);
-					System.out.println("Enter capacity");
+					System.out.println("Enter Energy Capacity (eg.1000w): ");
 					String capacity = scan.nextLine();
 					energy.setCapacity(capacity);
 					energyList.add(energy);
-					System.out.println("Do you want to add more energy source");
+					System.out.println("Do you want to add more energy sources? (yes/no): ");
 					String cont1 = scan.nextLine();
 					if (cont1.equalsIgnoreCase("yes")) {
 						continue;
@@ -132,7 +132,7 @@ public class CarChargingStationMain {
 				}
 				loc.setEnergySource(energyList);
 				locList.add(loc);
-				System.out.println("Do you want to add more locations");
+				System.out.println("Do you want to add more locations? (yes/no): ");
 				String cont = scan.nextLine();
 				if (cont.equalsIgnoreCase("yes")) {
 					continue;
@@ -143,7 +143,7 @@ public class CarChargingStationMain {
 			admin.setLocation(locList);
 			adminList.add(admin);
 			printLogs("Admin " + admin.getAdminName() + " data received", "AdminData.txt");
-			System.out.println("Do you to add more admin?");
+			System.out.println("Do you want to add more admins? (yes/no): ");
 			String canContinue = scan.nextLine();
 			if (canContinue.equalsIgnoreCase("yes")) {
 				continue;
@@ -160,20 +160,20 @@ public class CarChargingStationMain {
 		while (true) {
 			User user = new User();
 			Car car = new Car();
-			System.out.println("Enter Car owner Name");
+			System.out.println("Enter Car Owner Name");
 			String carOwner = scan.nextLine();
 			car.setOwnerName(carOwner);
-			System.out.println("Enter Car number");
+			System.out.println("Enter Car Number");
 			String carNumber = scan.nextLine();
 			car.setNumber(carNumber);
-			System.out.println("Enter Slot book time");
+			System.out.println("Enter Slot Book Date & Time in 24 Hours format (dd-mm-yyyy HH:mm (24 hours)): ");
 			String bookTime = scan.nextLine();
 			car.setBookedTimeSlot(LocalDateTime.parse(bookTime, DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm")));
-			System.out.println("Enter battery level");
+			System.out.println("Enter Battery Level % (eg.10): ");
 			int battery = scan.nextInt();
 			car.setBatteryLevel(battery);
 			scan.nextLine();
-			System.out.println("Enter car brand");
+			System.out.println("Enter Car Brand");
 			String carBrand = scan.nextLine();
 			car.setBrand(carBrand);
 			user.setCar(car);
@@ -191,7 +191,7 @@ public class CarChargingStationMain {
 					user.getCar().getApproximateTimeToGetCharged());
 			printLogs(data, "UserData.txt");
 			
-			System.out.println("Do you want to add more users");
+			System.out.println("Do you want to add more users? (yes/no): ");
 			String addUsers = scan.nextLine();
 			if (addUsers.equalsIgnoreCase("yes")) {
 				continue;
