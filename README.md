@@ -37,3 +37,7 @@ Import > General > Project from Folder</p>
 
 <br>Description: In this task, have created thread pool for car charging taking users from a blocking queue for booking slots. Also created a thread for charging batteries from different energy sources</br>
 
+<H3>Youtube Video Link:</H3>
+
+<a>https://youtu.be/G1SDU3xXJ9c</a>
+
