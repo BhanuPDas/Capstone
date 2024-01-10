@@ -36,4 +36,7 @@ Import > General > Project from Folder</p>
 <br>Log file related activity is being logged in ManageFile.txt</br><p>
 
 <br>Description: In this task, have added better support for log files. Log files are created each day while old files are archived. Also has the option to read any log file he wants</br>
+<H3>YouTube Video Link:</H3>
+
+<a>https://youtu.be/htysJPXQnPw</a>
 
