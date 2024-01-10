@@ -9,5 +9,6 @@ Import > General > Project from Folder</p>
 <br>Description: In this task, have created priority queue for cars to book a slot for charging, have created user and admin by reading the data from respective files. Have created metadata for the project and have created log files for all classes</br>
 
 <H3>YouTube Video Link:</H3>
+
 <a>https://youtu.be/cj1nqOLLikM</a>
 
