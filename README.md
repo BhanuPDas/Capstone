@@ -39,4 +39,5 @@ Import > General > Project from Folder</p>
 <H3>YouTube Video Link:</H3>
 
 <a>https://youtu.be/htysJPXQnPw</a>
+<br>Presenter names and timestamps have been included in YouTube video description.</br>
 
