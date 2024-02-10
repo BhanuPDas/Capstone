@@ -6,6 +6,8 @@
 <p>Note: Please import the project as :
 
 Import > General > Project from Folder</p>
+<br>The Class Diagram for this project is given below</br>
+<br><img>Capstone_UML.png</img></br>
 
 <p><br>When the application is started, it will ask for the below simple admin and user inputs. Please enter according to the input prompt</br>
 <br>1)Enter Admin Name:</br>
@@ -35,7 +37,7 @@ Import > General > Project from Folder</p>
 <br>Error occured in main method are being logged in ChargeStationMainLogs.txt</br>
 <br>Error in charge station file are logged in ChargeStation.log file</br>
 <br>Logs related to EnergySource are logged in EnergySource.log file</br>
-<br>Log file related activity is being logged in ManageFile.txt</br><p>
+<br>Log file related activity is being logged in ManageFile.txt</br></p>
 
 <br>Please add JUnit 5 libraries in project build path to run JUnits</br>
 
