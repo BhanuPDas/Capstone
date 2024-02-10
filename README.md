@@ -7,7 +7,7 @@
 
 Import > General > Project from Folder</p>
 <br>The Class Diagram for this project is given below</br>
-<br><img>Capstone_UML.png</img></br>
+<a>https://github.com/BhanuPDas/Capstone/blob/Capstone-Main/Capstone_UML.png</a>
 
 <p><br>When the application is started, it will ask for the below simple admin and user inputs. Please enter according to the input prompt</br>
 <br>1)Enter Admin Name:</br>
@@ -41,7 +41,7 @@ Import > General > Project from Folder</p>
 
 <br>Please add JUnit 5 libraries in project build path to run JUnits</br>
 
-<br>Description: In this task, have added junits for the classes already created.</br>
+<br>Description: This is capstone project. As per the requirement, we have created a software which will allocate slots to the cars to charge their cars. It will calculate wait time for each car and if wait time is more than 15 minutes, it will remove the car from the queue.</br>
 <H3>YouTube Video Link:</H3>
 
 <a>https://youtu.be/xlrD-5xn_jU</a>
