@@ -41,7 +41,7 @@ Import > General > Project from Folder</p>
 
 <br>Please add JUnit 5 libraries in project build path to run JUnits</br>
 
-<br>Description: This is capstone project. As per the requirement, we have created a software which will allocate slots to the cars to charge their cars. It will calculate wait time for each car and if wait time is more than 15 minutes, it will remove the car from the queue.</br>
+<br>Description: This is CAPSTONE project. As per the requirement, we have created a multi-threaded software - for each location, it will allocate slots to the cars to charge their batteries. It will calculate wait time for each car and if wait time is more than 15 minutes, it will remove the car from the queue.</br>
 <H3>YouTube Video Link:</H3>
 
 <a>https://youtu.be/xlrD-5xn_jU</a>
